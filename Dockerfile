@@ -17,7 +17,6 @@ COPY . .
 # RUN npm ci --only=production
 RUN rm -rf build
 RUN npm install
-RUN npm run build
 
 # Copy local code to the container image.
 COPY . ./
